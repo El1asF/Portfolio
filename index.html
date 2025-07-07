@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias Friderici | Portfolio</title>
+    <meta name="description" content="Portfolio-Website von Elias Friderici, deutscher YouTube-Creator & Filmstudent">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="module" crossorigin src="/assets/index-CiPim1k-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BF9tOP_t.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#start" class="skip-link">Zum Inhalt springen</a>
+    
+    <!-- Background Effects -->
+    <div class="hex-grid-bg"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" aria-label="Elias Friderici">Elias<span>F</span></a>
+            
+            <div class="burger-menu" aria-label="Menü umschalten" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#start" class="nav-link active">Start</a></li>
+                <li><a href="#youtube" class="nav-link">YouTube</a></li>
+                <li><a href="#film-projects" class="nav-link">Filmprojekte</a></li>
+                <li><a href="#praktikum" class="nav-link">Praktikum</a></li>
+                <li><a href="#lebenslauf" class="nav-link">Lebenslauf</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Start Section -->
+        <section id="start" class="section">
+            <div class="container">
+                <h2 class="section-title">Willkommen</h2>
+                
+                <div class="profile-container">
+                    <div class="profile-photo vertical">
+                        <img src="/assets/portrait_vertical-DrpqKnH_.jpg" alt="Elias Friderici Portrait">
+                    </div>
+                    <div class="profile-text">
+                        <h1 class="profile-name">Elias Friderici</h1>
+                        <p class="profile-description">Student der Medienproduktion mit Schwerpunkt auf Bild- und Lichtgestaltung. Erfahrung in der Video-/Filmproduktion und zweisprachig deutsch-französisch.</p>
+                        <p>Als leidenschaftlicher Filmemacher und Content Creator verbinde ich traditionelle Filmtechniken mit modernen digitalen Medien. Mein Fokus liegt auf visuellen Geschichten, die Menschen berühren und inspirieren.</p>
+                        <div class="profile-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-icon"><i class="fas fa-camera"></i></span>
+                                <span class="highlight-text">Kameramann</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon"><i class="fas fa-lightbulb"></i></span>
+                                <span class="highlight-text">Lichtgestaltung</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon"><i class="fas fa-language"></i></span>
+                                <span class="highlight-text">Deutsch-Französisch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- YouTube Section -->
+        <section id="youtube" class="section">
+            <div class="container">
+                <h2 class="section-title">YouTube</h2>
+                
+                <!-- Profil-Panel -->
+                <div class="profile-panel">
+                    <div class="channel-info">
+                        <div class="channel-avatar large">
+                            <img src="/assets/channels4_profile-CLxi5E-i.jpg" alt="El1as.F Kanal" id="channel-avatar">
+                        </div>
+                        <div class="channel-details">
+                            <h3 id="channel-title" class="large-title">El1as.F</h3>
+                            <div class="subscriber-count" id="subscriber-count">0 Abonnenten</div>
+                            <a href="https://www.youtube.com/@El1asF" target="_blank" class="btn btn-primary small">Zum YouTube-Kanal</a>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links" id="social-links">
+                        <!-- Social Media Links werden dynamisch geladen -->
+                        <div class="social-link-placeholder">Social Media Links werden geladen...</div>
+                    </div>
+                </div>
+                
+                <!-- Most Viewed -->
+                <div class="video-section">
+                    <h3>Meistgesehene</h3>
+                    <div class="most-viewed-container" id="most-viewed-videos">
+                        <!-- Videos werden hier über API geladen -->
+                        <div class="card video-card longform">
+                            <div class="most-viewed-thumbnail"></div>
+                                <div class="longform-thumbnail-container">
+                                    <div class="video-placeholder">Meistgesehenes Video wird geladen...</div>
+                                <div>
+                            </div>
+                        </div>
+                        <div class="card video-card short">
+                            <div class="most-viewed-thumbnail">
+                                <div class="video-placeholder">Meistgesehenes Short wird geladen...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Latest Videos -->
+                <div class="video-section">
+                    <h3>Letzte Videos</h3>
+                    <div class="video-grid" id="latest-videos">
+                        <!-- Videos werden hier über API geladen -->
+                        <div class="card video-card">
+                            <div class="video-placeholder">Neueste Videos werden geladen...</div>
+                        </div>
+                        <div class="card video-card">
+                            <div class="video-placeholder">Neueste Videos werden geladen...</div>
+                        </div>
+                        <div class="card video-card">
+                            <div class="video-placeholder">Neueste Videos werden geladen...</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Latest Shorts -->
+                <div class="video-section">
+                    <h3>Letzte Shorts</h3>
+                    <div class="shorts-row" id="latest-shorts">
+                        <!-- Shorts werden hier über API geladen -->
+                        <div class="card shorts-card" >
+                                <div class="video-placeholder">Shorts werden geladen...</div>
+                        </div>
+                        <div class="card shorts-card">
+                            <div class="video-placeholder">Shorts werden geladen...</div>
+                        </div>
+                        <div class="card shorts-card">
+                            <div class="video-placeholder">Shorts werden geladen...</div>
+                        </div>
+                        <div class="card shorts-card">
+                            <div class="video-placeholder">Shorts werden geladen...</div>
+                        </div>
+                        <div class="card shorts-card">
+                            <div class="video-placeholder">Shorts werden geladen...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Film & Projekte Section -->
+        <section id="film-projects" class="section" data-section="film-projects">
+            <div class="container">
+                <h2 class="section-title">Film & Projekte</h2>
+                
+                <div class="vertical-timeline">
+                    <!-- Filmprojekte werden dynamisch aus JSON geladen -->
+                    <div class="timeline-placeholder">Filmprojekte werden geladen...</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Praktikum Section -->
+        <section id="praktikum" class="section" data-section="praktikum">
+            <div class="container">
+                <h2 class="section-title">Praktikum</h2>
+                
+                <!-- Einleitungskachel -->
+                <div class="card praktikum-intro-card">
+                    <div class="praktikum-intro-content">
+                        <h3>Praktikum bei die antwort ag</h3>
+                        <p>Während meines sechsmonatigen Praktikums bei der Kreativagentur "die antwort ag" in Zürich konnte ich meine Fähigkeiten in der Medienproduktion weiter ausbauen. Als Teil des Produktionsteams war ich an der Erstellung von Imagefilmen, Kurzvideos für Social Media und Werbeplakaten beteiligt.</p>
+                        <p>Meine Hauptaufgaben umfassten Kameraassistenz, Lichtsetup, Tonaufnahme und Postproduktion. Besonders wertvoll war die Erfahrung in der Zusammenarbeit mit Kunden aus verschiedenen Branchen und die Umsetzung ihrer spezifischen Anforderungen in visuell ansprechende Medieninhalte.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagefilme - Karussell -->
+                <div class="video-section">
+                    <h3>Imagefilme</h3>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="imagefilme-carousel">
+                            <!-- 5 Querformat-Videos als Platzhalter -->
+                            <div class="carousel-item card video-card">
+                                <div class="longform-thumbnail-container">
+                                    <div class="video-thumbnail">
+                                        <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Imagefilm 1">
+                                        <div class="video-duration">3:45</div>
+                                    </div>
+                                    <div class="video-info">
+                                        <h4 class="video-title">Unternehmensfilm Stadtpolizei Zürich</h4>
+                                        <div class="video-meta">
+                                            <span>1.2K Aufrufe</span>
+                                            <span>vor 3 Monaten</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card video-card">
+                                <div class="longform-thumbnail-container">
+                                    <div class="video-thumbnail">
+                                        <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Imagefilm 2">
+                                        <div class="video-duration">4:20</div>
+                                    </div>
+                                    <div class="video-info">
+                                        <h4 class="video-title">Produktpräsentation Rent a Rentner</h4>
+                                        <div class="video-meta">
+                                            <span>850 Aufrufe</span>
+                                            <span>vor 4 Monaten</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card video-card">
+                                <div class="longform-thumbnail-container">
+                                    <div class="video-thumbnail">
+                                        <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Imagefilm 3">
+                                        <div class="video-duration">2:55</div>
+                                    </div>
+                                    <div class="video-info">
+                                        <h4 class="video-title">Markengeschichte Schweizer Unternehmen</h4>
+                                        <div class="video-meta">
+                                            <span>1.5K Aufrufe</span>
+                                            <span>vor 2 Monaten</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card video-card">
+                                <div class="longform-thumbnail-container">
+                                    <div class="video-thumbnail">
+                                        <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Imagefilm 4">
+                                        <div class="video-duration">3:10</div>
+                                    </div>
+                                    <div class="video-info">
+                                        <h4 class="video-title">Unternehmenskultur Die Antwort AG</h4>
+                                        <div class="video-meta">
+                                            <span>920 Aufrufe</span>
+                                            <span>vor 5 Monaten</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card video-card">
+                                <div class="longform-thumbnail-container">
+                                    <div class="video-thumbnail">
+                                        <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Imagefilm 5">
+                                        <div class="video-duration">5:15</div>
+                                    </div>
+                                    <div class="video-info">
+                                        <h4 class="video-title">Recruiting-Video Technische Hochschule</h4>
+                                        <div class="video-meta">
+                                            <span>1.8K Aufrufe</span>
+                                            <span>vor 1 Monat</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-button prev" data-carousel="imagefilme-carousel" aria-label="Vorherige Folie">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-button next" data-carousel="imagefilme-carousel" aria-label="Nächste Folie">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kurzvideos - Karussell -->
+                <div class="video-section">
+                    <h3>Kurzvideos</h3>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="kurzvideos-carousel">
+                            <!-- 10 Hochformat-Videos als Platzhalter -->
+                            <div class="carousel-item card shorts-card">
+                                <div class="shorts-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Kurzvideo 1">
+                                    <div class="video-duration">0:45</div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Produkt-Teaser Neuerscheinung</h4>
+                                    <div class="video-meta">
+                                        <span>650 Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card shorts-card">
+                                <div class="shorts-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Kurzvideo 2">
+                                    <div class="video-duration">1:20</div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Event-Highlight Messe Zürich</h4>
+                                    <div class="video-meta">
+                                        <span>480 Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card shorts-card">
+                                <div class="shorts-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Kurzvideo 3">
+                                    <div class="video-duration">0:55</div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Social Media Clip Kampagne</h4>
+                                    <div class="video-meta">
+                                        <span>720 Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card shorts-card">
+                                <div class="shorts-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Kurzvideo 4">
+                                    <div class="video-duration">1:10</div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Tutorial-Ausschnitt Produktvorstellung</h4>
+                                    <div class="video-meta">
+                                        <span>530 Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card shorts-card">
+                                <div class="shorts-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Kurzvideo 5">
+                                    <div class="video-duration">0:30</div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Produktdemo Kurzversion</h4>
+                                    <div class="video-meta">
+                                        <span>420 Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card shorts-card">
+                                <div class="shorts-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Kurzvideo 6">
+                                    <div class="video-duration">0:45</div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Mitarbeiter-Spotlight</h4>
+                                    <div class="video-meta">
+                                        <span>380 Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card shorts-card">
+                                <div class="shorts-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Kurzvideo 7">
+                                    <div class="video-duration">1:00</div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Kundenreferenz Testimonial</h4>
+                                    <div class="video-meta">
+                                        <span>590 Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card shorts-card">
+                                <div class="shorts-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Kurzvideo 8">
+                                    <div class="video-duration">0:50</div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Büroalltag Einblick</h4>
+                                    <div class="video-meta">
+                                        <span>410 Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card shorts-card">
+                                <div class="shorts-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Kurzvideo 9">
+                                    <div class="video-duration">1:15</div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Produktionseinblick Behind-the-Scenes</h4>
+                                    <div class="video-meta">
+                                        <span>680 Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card shorts-card">
+                                <div class="shorts-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Kurzvideo 10">
+                                    <div class="video-duration">0:40</div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Teambuilding Event</h4>
+                                    <div class="video-meta">
+                                        <span>520 Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-button prev" data-carousel="kurzvideos-carousel" aria-label="Vorherige Folie">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-button next" data-carousel="kurzvideos-carousel" aria-label="Nächste Folie">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Werbeplakate - Karussell -->
+                <div class="video-section">
+                    <h3>Werbeplakate</h3>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="werbeplakate-carousel">
+                            <!-- Mischung aus Quer- und Hochkant-Bild-Platzhaltern -->
+                            <div class="carousel-item card">
+                                <div class="poster-container landscape">
+                                    <div class="poster-placeholder">
+                                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
+                                            <path d="M5 15L8 12L10 14L15 9L19 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>Querformat-Plakat</p>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Kampagnen-Plakat Stadtpolizei</h4>
+                                    <div class="video-meta">
+                                        <span>Dezember 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card">
+                                <div class="poster-container portrait">
+                                    <div class="poster-placeholder">
+                                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
+                                            <path d="M5 15L8 12L10 14L15 9L19 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>Hochformat-Plakat</p>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Produktwerbung Rent a Rentner</h4>
+                                    <div class="video-meta">
+                                        <span>November 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card">
+                                <div class="poster-container landscape">
+                                    <div class="poster-placeholder">
+                                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
+                                            <path d="M5 15L8 12L10 14L15 9L19 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>Querformat-Plakat</p>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Veranstaltungsankündigung</h4>
+                                    <div class="video-meta">
+                                        <span>Oktober 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card">
+                                <div class="poster-container portrait">
+                                    <div class="poster-placeholder">
+                                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
+                                            <path d="M5 15L8 12L10 14L15 9L19 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>Hochformat-Plakat</p>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Markenbekanntheit Kampagne</h4>
+                                    <div class="video-meta">
+                                        <span>September 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card">
+                                <div class="poster-container landscape">
+                                    <div class="poster-placeholder">
+                                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
+                                            <path d="M5 15L8 12L10 14L15 9L19 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>Querformat-Plakat</p>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Produktkatalog Cover</h4>
+                                    <div class="video-meta">
+                                        <span>August 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item card">
+                                <div class="poster-container portrait">
+                                    <div class="poster-placeholder">
+                                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
+                                            <path d="M5 15L8 12L10 14L15 9L19 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>Hochformat-Plakat</p>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Imagekampagne Stadtwerke</h4>
+                                    <div class="video-meta">
+                                        <span>Juli 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-button prev" data-carousel="werbeplakate-carousel" aria-label="Vorherige Folie">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-button next" data-carousel="werbeplakate-carousel" aria-label="Nächste Folie">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Lebenslauf Section -->
+        <section id="lebenslauf" class="section">
+            <div class="container">
+                <h2 class="section-title">Lebenslauf</h2>
+                <!-- Lebenslauf wird dynamisch aus JSON geladen -->
+                <div class="lebenslauf-placeholder">Lebenslauf wird geladen...</div>
+            </div>
+            <!-- Skills Section -->
+
+        </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-subtitle">Skills</h2>
+                <div class="skills-grid">
+                <!-- Hier werden später die Skill-Cards eingefügt -->
+                </div>
+                <div class="languages-list">
+                <!-- Hier sollen deine Sprachen rein -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Elias Friderici. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+</body>
+</html>
