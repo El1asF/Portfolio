@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Videoschnitt",
+    "level": 9
+  },
+  {
+    "name": "Kameraführung",
+    "level": 8.6
+  },
+  {
+    "name": "Lichtgestaltung",
+    "level": 7
+  },
+  {
+    "name": "Adobe Premiere Pro",
+    "level": 7
+  },
+  {
+    "name": "Adobe After Effects",
+    "level": 5
+  },
+  {
+    "name": "DaVinci Resolve",
+    "level": 9
+  },
+  {
+    "name": "3D-Modellierung",
+    "level": 8
+  },
+  {
+    "name": "Tonaufnahme",
+    "level": 6
+  },
+  {
+    "name": "Adobe Photoshop",
+    "level": 7.5
+  },
+  {
+    "name": "Handwerkliche Fähigkeiten",
+    "level": 8
+  }
+]
