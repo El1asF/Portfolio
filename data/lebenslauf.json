@@ -1,0 +1,44 @@
+[
+  {
+    "titel": "Praktikum bei die antwort ag",
+    "beschreibung": "Während meines sechsmonatigen Praktikums bei der Kreativagentur war ich an der Erstellung von Imagefilmen, Kurzvideos für Social Media und Werbeplakaten beteiligt. Meine Hauptaufgaben umfassten Kameraassistenz, Lichtsetup, Tonaufnahme und Postproduktion.",
+    "typ": "Beruf",
+    "datum": "2023 bis 2024"
+  },
+  {
+    "titel": "Content Creator",
+    "beschreibung": "YouTube-Kanal \"El1as.F\". Produktion von Erklärvideos und Kurzfilmen.",
+    "typ": "Beruf",
+    "datum": "2022 bis heute"
+  },
+  {
+    "titel": "J. Schmalz GmbH, Glatten — Montagearbeiter",
+    "beschreibung": "Ferienjob in der Montageabteilung.",
+    "typ": "Beruf",
+    "datum": "2018-08"
+  },
+  {
+    "titel": "J. Schmalz GmbH, Glatten — Montagearbeiter",
+    "beschreibung": "Ferienjob in der Montageabteilung.",
+    "typ": "Beruf",
+    "datum": "2019-08"
+  },
+  {
+    "titel": "Hochschule Offenburg",
+    "beschreibung": "mgp-Studium: \"Mediengestaltung Produktion Film Animation Grafik Interaktion\" (vorauss. Abschluss 2026). Schwerpunkt: Bild- und Lichtgestaltung, Filmproduktion.",
+    "typ": "Bildung",
+    "datum": "2023-03 bis heute"
+  },
+  {
+    "titel": "Freie Waldorfschule Freudenstadt — Abitur",
+    "beschreibung": "Von der 7. Klasse bis zur Allgemeinen Hochschulreife (2022), Realschulabschluss (2020). Leistungskurse: Kunst, Französisch, Mathematik.",
+    "typ": "Bildung",
+    "datum": "2016-01 bis 2022-07"
+  },
+  {
+    "titel": "École primaire und Collège Les Récollets",
+    "beschreibung": "Grundschule und Mittelstufe in Frankreich bis zur 7. Klasse.",
+    "typ": "Bildung",
+    "datum": "2009-2015"
+  }
+]

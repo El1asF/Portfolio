@@ -1,0 +1,72 @@
+[
+  {
+    "titel": "Projekt Kathie",
+    "beschreibung": "Eine künstliche Intelligenz bekommt einen menschlichen Körper und startet ihr Leben als Studentin an der Hochschule Offenburg.",
+    "aufgaben": ["Zweite Kamera", "Schnitt", "Audio-Mixing"],
+    "datum": "2025-05",
+    "videolink": ""
+  },
+  {
+    "titel": "Stecken stehen",
+    "beschreibung": "Eine Aufzugpanne zwingt zwei unterschiedliche Menschen, ihre Lebenswege zu hinterfragen.",
+    "aufgaben": ["Produktion", "Kamera", "Licht", "Ton", "Schnitt"],
+    "datum": "2024-11",
+    "videolink": ""
+  },
+  {
+    "titel": "Go Touch Grass",
+    "beschreibung": "Für die monatliche studentische Filmchallenge an der HS Offenburg produziert. Produziert innerhalb eines Tages.",
+    "aufgaben": ["Kamera", "Licht", "Schnitt", "Drehbuch"],
+    "datum": "2024-10",
+    "videolink": "https://www.youtube.com/watch?v=VZJvwisuhz4&t=415s"
+  },
+  {
+    "titel": "Morph",
+    "beschreibung": "Die Figur Weiß ist in einem sterilen Raum gefangen und faltet endlos Papierschmetterlinge. Projekt unter realistischen Drehbedingungen mit professioneller Technik und Teamstruktur. Mit über 10 Studierenden.",
+    "aufgaben": ["Schnitt", "Tonmeister", "Best Boy", "Datahoarder"],
+    "datum": "2024-04",
+    "videolink": ""
+  },
+  {
+    "titel": "The Sketch",
+    "beschreibung": "Eine gezeichnete Figur erwacht zum Leben und erkundet das Atelier ihres Schöpfers. Filmprojekt im Rahmen des Studiums.",
+    "aufgaben": ["Kamera", "Schnitt", "Sound FX", "Color Grading"],
+    "datum": "2023-12",
+    "videolink": "https://www.youtube.com/watch?v=8LSSEU9SHHM"
+  },
+  {
+    "titel": "Wut",
+    "beschreibung": "Experimentelles Musikvideo als künstlerisches Ausdrucksmittel.",
+    "aufgaben": ["Kamera", "Schnitt", "Schauspiel"],
+    "datum": "2023-12",
+    "videolink": "https://www.youtube.com/watch?v=UsoSrQ1I05I"
+  },
+  {
+    "titel": "Die Schlüssel",
+    "beschreibung": "Ein 2-tägiges Kurzfilmprojekt mit experimentellem Charakter.",
+    "aufgaben": ["Kamera", "Schnitt", "Drehbuch", "Schauspiel"],
+    "datum": "2023-07",
+    "videolink": "https://www.youtube.com/watch?v=QVj6JgJNfSk"
+  },
+  {
+    "titel": "Theaterstück \"Manche mögen's heiß\"",
+    "beschreibung": "Zwei Musiker fliehen als Frauen verkleidet in eine Damenband. Multikameraverfilmung eines 3-stündigen Klassenspiels (4 Aufführungen).",
+    "aufgaben": ["Kameraaufbau", "Tonaufnahme", "Kameraführung", "Schnitt"],
+    "datum": "2023-03",
+    "videolink": "https://www.youtube.com/watch?v=gNVrNOiBmrg"
+  },
+  {
+    "titel": "Dogma",
+    "beschreibung": "Musikvideo-Projekt.",
+    "aufgaben": ["Kamera- und Lichtaufbau", "Kameraarbeit"],
+    "datum": "2022-10",
+    "videolink": ""
+  },
+  {
+    "titel": "Over the Rhinebow",
+    "beschreibung": "Videoprojekt. Über CinEuro auf das Projekt aufmerksam geworden.",
+    "aufgaben": ["Aufbau", "Kameraarbeit"],
+    "datum": "2022-10",
+    "videolink": ""
+  }
+]

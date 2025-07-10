@@ -1,0 +1,129 @@
+/* 
+ * Elias Friderici Portfolio Website
+ * Animations CSS
+ */
+
+/* ===== Scroll Animations ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===== Timeline Animations ===== */
+.timeline-item {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-date {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s;
+}
+
+.timeline-item.visible .timeline-date {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Skill Card Animations ===== */
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+/* ===== Video Card Hover Effekt ===== */
+.card.video-card {
+  /* Übergang für Bewegung und Schatten */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: top center;
+}
+
+.card.video-card:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+}
+
+/* ===== Praktikum Carousel Animations ===== */
+.praktikum-card {
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.praktikum-card:hover {
+  transform: translateY(-5px);
+}
+
+.praktikum-card-header {
+  padding: 1.5rem;
+  background-color: var(--accent);
+  color: white;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.praktikum-card-content {
+  padding: 1.5rem;
+}
+
+.praktikum-item {
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.praktikum-item:hover {
+  transform: scale(1.02);
+}
+
+/* ===== Mobile Animation Adjustments ===== */
+@media (max-width: 768px) {
+  /* Disable animations that might impair performance on mobile */
+  .cursor-glow {
+    display: none;
+  }
+  
+  .fade-in,
+  .slide-in-left,
+  .slide-in-right,
+  .timeline-item,
+  .timeline-date {
+    transition: none;
+  }
+}
